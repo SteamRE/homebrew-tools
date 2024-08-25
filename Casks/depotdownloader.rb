@@ -17,10 +17,10 @@ cask "depotdownloader" do
     strategy :github_releases do |json, regex|
       json.map do |release|
         next if release["draft"] || release["prerelease"]
-  
+
         match = release["tag_name"]&.match(regex)
         next if match.blank?
-  
+
         match[1]
       end
     end
