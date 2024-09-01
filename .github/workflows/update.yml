@@ -1,0 +1,20 @@
+name: update casks
+
+on:
+  schedule:
+  - cron: '0 6 * * 6'
+  workflow_dispatch:
+
+jobs:
+  test-bot:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Update Casks
+      run: |
+        ./Scripts/update.sh
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        title: 'Update Casks'
+        commit-message: 'Update Casks'
