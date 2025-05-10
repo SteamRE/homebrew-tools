@@ -1,9 +1,9 @@
 cask "depotdownloader" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.0.0"
-  sha256 arm:   "1255a2810bdf30ec38bbbcf704a5e1d3c016bed0bcaf9d7548f70bf7ab44ad9d",
-         intel: "a6a6f110e9900c77620d8634fe58aea7f227634a64d42bb93a4a1468d8579601"
+  version "3.4.0"
+  sha256 arm:   "60e80c7c496f3f9a079cd3c62036b35d088c27bc0149baf38f009eb57a52f6a5",
+         intel: "3214b689564d73e9342a8a4aef693de6ad3d293801b0f300a4466f60ec75befb"
 
   url "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_#{version}/DepotDownloader-macos-#{arch}.zip"
   name "DepotDownloader"
