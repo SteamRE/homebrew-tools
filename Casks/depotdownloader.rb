@@ -25,7 +25,7 @@ cask "depotdownloader" do
     end
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   binary "DepotDownloader", target: "depotdownloader"
 end
